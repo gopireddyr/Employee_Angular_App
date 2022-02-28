@@ -1,0 +1,29 @@
+<div class="container" style="margin-top: 10px;">
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="col">Id : </td>
+            <td scope="row">{{employee.id}}</td>
+          </tr>
+          <tr>
+            <td scope="col">FirstName : </td>
+            <td>{{employee.empFirstName}}</td>
+          </tr>
+          <tr>
+            <td scope="col">LastName : </td>
+            <td>{{employee.empLastName}}</td>
+          </tr>
+          <tr>          
+            <td scope="col">EmailId : </td>
+            <td>{{employee.empEmailID}}</td>
+            <!-- <td>
+            <button class="btn btn-primary" (click)="updateEmp(employee.id)" style="margin-right: 10px;">Update</button>
+            </td> -->
+            <!-- <td><button onclick="cetailsbtn">Details</button></td> -->
+          </tr>
+        </tbody>
+      </table>
+      <div><button class="btn btn-primary" (click)="Back()" style="margin-right: 10px;">Home</button></div>
+    </div>

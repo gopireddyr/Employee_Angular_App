@@ -1,0 +1,27 @@
+<title class="text-center">Add Employee Component</title>
+
+<div class="container" style="margin-top: 10px;">
+  <form (ngSubmit)="onSubmit()">
+    <div style="margin-top: 10px;">
+      <div style="display: inline;">Id : </div>
+      <div style="display: inline;"><input required type="number" name="id" [(ngModel)]="employee.id"></div>
+    </div>
+    <div style="margin-top: 10px;">
+      <div style="display: inline;">FirstName : </div>
+      <div style="display: inline;"><input required [(ngModel)]="employee.empFirstName" name="empFirstName" type="text" placeholder="first name.."></div>
+    </div>
+    <div style="margin-top: 10px;">
+      <div style="display: inline;">lastName : </div>
+      <div style="display: inline;"><input required name="empLastName" [(ngModel)]="employee.empLastName" type="text" placeholder="last name.."></div>
+    </div>
+    <div style="margin-top: 10px;">
+      <div style="display: inline;">EmailId : </div>
+      <div style="display: inline;"><input required name="empEmailID" [(ngModel)]="employee.empEmailID" type="email" placeholder="emailId.."></div>
+    </div>
+    <div style="margin-top: 15px;">
+      <button class="btn btn-primary" style="margin-right: 15px;" type="submit">Submit</button>
+      <button class="btn btn-primary" style="display: inline;" type="cancel">Cancel</button>
+      </div>
+      
+  </form>
+</div>

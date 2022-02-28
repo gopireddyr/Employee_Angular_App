@@ -1,0 +1,27 @@
+<div class="container" style="margin-top: 10px;">
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">EmailId</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let employee of employee">
+        <td scope="row" [attr.id]="employee.id">{{employee.id}}</td>
+        <td>{{employee.empFirstName}}</td>
+        <td>{{employee.empLastName}}</td>
+        <td>{{employee.empEmailID}}</td>
+        <td>
+        <button class="btn btn-danger" (click)="deleteEmp(employee.id)" style="margin-right: 10px;">Delete</button>
+        <button class="btn btn-info" (click)="vieweEmp(employee.id)" style="margin-right: 10px;">View</button>
+        <button class="btn btn-primary" (click)="updateEmp(employee.id)" style="margin-right: 10px;">Update</button>
+        </td>
+        <!-- <td><button onclick="cetailsbtn">Details</button></td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
